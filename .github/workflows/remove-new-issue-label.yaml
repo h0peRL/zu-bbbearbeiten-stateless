@@ -4,7 +4,6 @@ on:
   issues:
     types:
       - assigned
-
 jobs:
   remove-label:
     runs-on: ubuntu-latest
@@ -16,7 +15,7 @@ jobs:
           script: |
             const issueNumber = context.issue.number;
             const labelToRemove = 'label-to-remove';
-            
+
             github.rest.issues.removeLabel({
               issue_number: issueNumber,
               owner: context.repo.owner,
