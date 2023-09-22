@@ -7,7 +7,7 @@ name: Build and deploy Python app to Azure Web App - devops1651
 on:
   push:
     branches:
-      - 8-la1650
+      - main
   workflow_dispatch:
 
 jobs:
